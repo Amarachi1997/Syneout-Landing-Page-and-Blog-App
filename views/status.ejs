@@ -1,0 +1,16 @@
+<%- include('partials/header') -%>
+
+<div class="status-grid-container">
+<div>
+    <h1><%- statusHeader %></h1>
+    <p><%- statusMessage %></p>
+    <form action="/status" method="post">
+        <button type="submit"><%= buttonText %></button>
+    </form>
+</div>
+<div>
+    <img src= <%= statusImage %> alt="success image">
+</div>
+</div>
+<%- include('partials/footer') -%>
+
